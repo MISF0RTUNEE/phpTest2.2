@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склонение слов</title>
+    
+</head>
+<body>
+
+    <h1>Склонение слов</h1>
+    <form action="script.php" method="post" enctype="multipart/form-data">
+        <label for="file">Выберите txt файл:</label><br><br>
+        <input type="file" name="file" id="file" accept=".txt" required><br><br>
+
+        <label for="case">Выберите падеж:</label><br><br>
+        <select name="case" id="case">
+            <option value="nominative">Именительный</option>
+            <option value="genitive">Родительный</option>
+            <option value="dative">Дательный</option>
+            <option value="accusative">Винительный</option>
+            <option value="instrumental">Творительный</option>
+            <option value="prepositional">Предложный</option>
+        </select><br><br>
+
+        <input type="submit" value="Склонить слова">
+    </form>
+
+</body>
+</html>
